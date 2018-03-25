@@ -1,0 +1,57 @@
+/* CSS declarations go here */
+
+@import '../node_modules/react-md/src/scss/react-md';
+
+$md-light-theme: true; // optional for light theme
+$md-primary-color: $md-light-blue-500;
+$md-secondary-color: $md-deep-orange-a-200;
+
+@include react-md-everything;
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700");
+
+.timeline {
+	width: calc(100vw - 325px);
+	min-width: 800px
+}
+
+.timetable {
+	height: 101%;
+}
+
+@media screen and (min-width: 320px){
+	.md-navigation-drawer-content {
+	    min-height: calc(100vh - 64px);
+	}
+}
+
+@media screen and (min-width: 768px){
+	.md-navigation-drawer-content {
+	    min-height: calc(100vh - 72px);
+	}
+}
+
+@media (min-width: 840px) {
+	.md-grid--40-16 {
+	    padding: 32px;
+	}
+}
+
+@media (max-width: 839px) and (min-width: 600px){
+	.md-grid--40-16 {
+	    padding: 32px;
+	}
+}
+
+@media (max-width: 599px){
+	.md-grid--40-16 {
+	    padding: 8px;
+	}
+}
+
+
+.floatingbutton {
+	position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
